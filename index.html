@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sail the Seas
+        </title>
+        <link rel="stylesheet" href="Form.css">
+        <script>
+            function toggle4 (){
+                var Sn = document.getElementById("Sn");
+                var Sniper = document.getElementById("Sniper");
+                if (Sniper.checked){
+                    Sn.style.display = "block";
+                }
+                else {
+                    Sn.style.display = "none";
+                }
+        
+            }
+             function toggle3 (){
+                var Haki = document.getElementById("Haki");
+                var H = document.getElementById("H");
+                if (Haki.checked){
+                    H.style.display = "block";
+                }
+                else {
+                    H.style.display = "none";
+                }
+        
+            }
+            function toggle2 (){
+                var Swordsman = document.getElementById("Swordsman");
+                var S = document.getElementById("Swordman");
+                if (S.checked){
+                    Swordsman.style.display = "block";
+                }
+               
+                else {
+                    Swordsman.style.display = "none";
+                }
+                    
+        
+            }
+            function toggle (){
+                var Logia= document.getElementById("Logia");
+                var Paramecia= document.getElementById("Paramecia");
+                var Zoan= document.getElementById("Zoan");
+                var lo= document.getElementById("lo");
+                var pa= document.getElementById("pa");
+                var zo= document.getElementById("zo");
+                if(Logia.checked){
+                    lo.style.display="block";
+                    pa.style.display="none";
+                    zo.style.display="none";
+
+                }
+                else  if(Paramecia.checked){
+                    lo.style.display="none";
+                    pa.style.display="block";
+                    zo.style.display="none";
+
+                }
+                else if(Zoan.checked){
+                    lo.style.display="none";
+                    pa.style.display="none";
+                    zo.style.display="block";
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Become a Pirate</h1>
+        <form>
+            <label for="fname">
+                Firstname:
+            </label>
+            <input id="fname" name="fname" type="text">
+            <br>
+            <label for="mname">
+                Middlename:
+            </label>
+            <input id="mname" name="mname" type="text">
+            <br>
+            <label for="lname">
+                Lastname:
+            </label>
+            <input id="lname" name="lname" type="text">
+            <br>
+            <br> 
+            <label>
+                Choose your style: 
+            </label>
+            <br>
+            <input type="checkbox" name="DevilFruit" id="DevilFruit" value="DevilFruit">
+            <label for="DevilFruit">
+                DevilFruit
+            </label> 
+            <br>
+            <input type="checkbox" name="Swordman" id="Swordman" value="Swordman" onclick="toggle2()">
+            <label for="Swordman">
+                Swordsman
+            </label> 
+            <br>
+            <input type="checkbox" name="Haki" id="Haki" value="Haki" onclick="toggle3()">
+            <label for="Haki">
+                Haki
+            </label> 
+            <br>
+            <input type="checkbox" name="Sniper" id="Sniper" value="Sniper" onclick="toggle4()">
+            <label for="Sniper">
+                Sniper
+            </label> 
+            <br>
+            <br>
+            <label for="DF">
+                Choose your DevilFruit Type= 
+            </label>
+            <br>
+            <input type="radio" name="DF" id="Logia" value="Logia"  onclick="toggle()">
+            <label for="Logia">
+                Logia
+            </label> 
+            <br>
+            <input type="radio" name="DF" id="Paramecia" value="Paramecia"  onclick="toggle()">
+            <label for="Paramecia">
+                Paramecia
+            </label> 
+            <br>
+            <input type="radio" name="DF" id="Zoan" value="Zoan" onclick="toggle()">
+            <label for="Zoan">
+                Zoan
+            </label> 
+            <br>
+            <br>
+        <div id="lo" style="display: none;">
+            
+            <label for="L">
+                Which Logia do you want?
+            </label>
+            <br>
+            <input type="radio" name="L" id="Dark" value="Dark">
+            <label for="Dark">
+                Dark
+            </label> 
+            <br>
+            <input type="radio" name="L" id="Magma" value="Magma">
+            <label for="Magma">
+                Magma
+            </label> 
+            <br>
+            <input type="radio" name="L" id="Light" value="Light">
+            <label for="Light">
+                Light
+            </label> 
+            <br>
+            <input type="radio" name="L" id="Fire" value="Fire">
+            <label for="Fire">
+                Fire
+            </label> 
+            <br>
+            <input type="radio" name="L" id="Lightning" value="Lightning">
+            <label for="Lightning">
+                Lightning
+            </label> 
+            <br>
+            <input type="radio" name="L" id="Ice" value="Ice">
+            <label for="Ice">
+                Ice
+            </label> 
+            <br>
+            <input type="radio" name="L" id="Sand" value="Sand">
+            <label for="Sand">
+                Sand
+            </label> 
+            <br>
+            <br>
+        </div>
+        <div id="pa"  style="display: none;">
+            <label for="P">
+                Which Paramecia do you want?
+            </label>
+            <br>
+            <input type="radio" name="P" id="Control" value="Control">
+            <label for="Control">
+                Control
+            </label> 
+            <br>
+            <input type="radio" name="P" id="Quake" value="Quake">
+            <label for="Quake">
+                Quake
+            </label> 
+            <br>
+            <input type="radio" name="P" id="Chop" value="Chop">
+            <label for="Chop">
+                Chop
+            </label> 
+            <br>
+            <input type="radio" name="P" id="Soul" value="Soul">
+            <label for="Soul">
+                Soul
+            </label> 
+            <br>
+            <input type="radio" name="P" id="Love" value="Love">
+            <label for="Love">
+                Love
+            </label> 
+            <br>
+            <input type="radio" name="P" id="Gravity" value="Gravity">
+            <label for="Gravity">
+                Gravity
+            </label> 
+            <br>
+            <input type="radio" name="P" id="Mochi" value="Mochi">
+            <label for="Mochi">
+                Mochi
+            </label> 
+            <br>
+            <br>
+        </div>
+        <div id="zo" style="display: none;">
+            <label for="Z">
+                Which Zoan do you want?
+            </label>
+            <br>
+            <input type="radio" name="Z" id="Nika" value="Nika">
+            <label for="Nika">
+                Nika
+            </label> 
+            <br>
+            <input type="radio" name="Z" id="Dragon" value="Dragon">
+            <label for="Dragon">
+                Dragon
+            </label>
+            <br>
+            <input type="radio" name="Z" id="Phoenix" value="Phoenix">
+            <label for="Phoenix">
+                Phoenix
+            </label> 
+            <br>
+            <input type="radio" name="Z" id="Pterodactyl" value="Pterodactyl">
+            <label for="Pterodactyl">
+                Pterodactyl
+            </label> 
+            <br>
+            <input type="radio" name="Z" id="Leopard" value="Leopard">
+            <label for="Leopard">
+                Leopard
+            </label> 
+            <br>
+            <input type="radio" name="Z" id="Kitsune" value="Kitsune">
+            <label for="Kitsune">
+                Kitsune
+            </label> 
+            <br>
+            <input type="radio" name="L" id="Giraffe" value="Giraffe">
+            <label for="Giraffe">
+                Giraffe
+            </label> 
+            <br>
+        </div>
+        <div id="Swordsman" style="display: none;">
+            <label for="Sword">
+                Choose your Sword Style= 
+            </label>
+            <br>
+            <input type="radio" name="Sword" id="1" value="1">
+            <label for="1">
+                1 Sword
+            </label> 
+            <br>
+            <input type="radio" name="Sword" id="2" value="2">
+            <label for="2">
+                2 Sword
+            </label> 
+            <br>
+            <input type="radio" name="Sword" id="3" value="3">
+            <label for="3">
+                3 Sword
+            </label> 
+            <br>
+            <label>
+                Choose your sword: 
+            </label>
+            <br>
+            <input type="checkbox" name="Enma" id="Enma" value="Enma">
+            <label for="Enma">
+                Enma
+            </label> 
+            <br>
+            <input type="checkbox" name="Yoru" id="Yoru" value="Yoru">
+            <label for="Yoru">
+                Yoru
+            </label> 
+            <br>
+            <input type="checkbox" name="Wado Ichimonji" id="Wado Ichimonji" value="Wado Ichimonji">
+            <label for="Wado Ichimonji">
+                Wado Ichimonji
+            </label> 
+            <br>
+            <input type="checkbox" name="Shishui" id="Shishui" value="Shishui">
+            <label for="Shishui">
+                Shishui
+            </label> 
+            <br>
+            <input type="checkbox" name="Gryphon" id="Gryphon" value="Gryphon">
+            <label for="Gryphon">
+                Gryphon
+            </label>
+            <br>
+        </div>
+        <div id="H" style="display: none;">
+            <label>
+                Choose your Haki type: 
+            </label>
+            <br>
+            <input type="checkbox" name="Arnament" id="Arnament" value="Arnament">
+            <label for="Arnament">
+                Arnament
+            </label> 
+            <br>
+            <input type="checkbox" name="Observation" id="Observation" value="Observation">
+            <label for="Observation">
+                Observation
+            </label> 
+            <br>
+            <input type="checkbox" name="Ryou" id="Ryou" value="Ryou">
+            <label for="Ryou">
+                Ryou
+            </label> 
+            <br>
+            <input type="checkbox" name="Future Sight" id="Future Sight" value="Future Sight">
+            <label for="Future Sight">
+                Future Sight
+            </label> 
+            <br>
+            <input type="checkbox" name="Conquerors" id="Conquerors" value="Conquerors">
+            <label for="Conquerors">
+                Conquerors
+            </label>
+            <br>
+        </div>
+        <div id="Sn" style="display: none;">
+            <label for="Sn">
+                Choose your Weapon= 
+            </label>
+            <br>
+            <input type="radio" name="Sn" id="Catapult" value="Catapult">
+            <label for="Catapult">
+                Catapult
+            </label> 
+            <br>
+            <input type="radio" name="Sn" id="Gun" value="Gun">
+            <label for="Gun">
+                Gun
+            </label> 
+            <br>
+            <label for="Sr">
+                Sniping Range= 
+            </label>
+            <input type="number" name="Sr" id="Sr" value=""min="0" max="1000" step="1">
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>
